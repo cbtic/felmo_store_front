@@ -193,7 +193,7 @@ const Checkout = ({ history }) => {
                 disabled={!addressSaved || !products.length}
                 onClick={createCashOrder}
               >
-                Place Order
+                Procesar compra
               </button>
             ) : (
               <button
@@ -201,7 +201,7 @@ const Checkout = ({ history }) => {
                 disabled={!addressSaved || !products.length}
                 onClick={() => history.push("/payment")}
               >
-                Place Order
+                Procesar compra
               </button>
             )}
           </div>
