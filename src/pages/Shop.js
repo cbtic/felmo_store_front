@@ -36,11 +36,11 @@ const Shop = () => {
   ]);
   const [brand, setBrand] = useState("");
   const [colors, setColors] = useState([
-    "Black",
-    "Brown",
-    "Silver",
-    "White",
-    "Blue",
+    "Negro",
+    "Marron",
+    "Plata",
+    "Blanco",
+    "Azul",
   ]);
   const [color, setColor] = useState("");
   const [shipping, setShipping] = useState("");

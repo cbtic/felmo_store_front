@@ -10,7 +10,7 @@ import { LoadingOutlined } from "@ant-design/icons";
 
 const initialState = {
   title: "",
-  description: "Desripción del producto",
+  description: "Descripción del producto",
   price: "",
   categories: [],
   category: "",
@@ -34,10 +34,10 @@ const initialState = {
     //     "https://res.cloudinary.com/dcqjrwaoi/image/upload/v1599480913/ho6wnp7sugyemnmtoogf.jpg",
     // },
   ],
-  colors: ["Black", "Brown", "Silver", "White", "Blue"],
-  brands: ["Apple", "Samsung", "Microsoft", "Lenovo", "ASUS"],
-  color: "White",
-  brand: "Apple",
+  colors: ["Negro", "Marron", "Plateado", "Blanco", "Azul"],
+  brands: ["Felmo", "Proveedor 2", "Proveedor 3", "Proveedor 4", "Proveedor 5"],
+  color: "Blanco",
+  brand: "Felmo",
 };
 
 const ProductCreate = () => {
