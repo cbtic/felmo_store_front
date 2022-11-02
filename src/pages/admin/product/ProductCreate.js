@@ -9,13 +9,13 @@ import FileUpload from "../../../components/forms/FileUpload";
 import { LoadingOutlined } from "@ant-design/icons";
 
 const initialState = {
-  title: "Macbook Pro",
-  description: "This is the best Apple product",
-  price: "45000",
+  title: "",
+  description: "Desripción del producto",
+  price: "",
   categories: [],
   category: "",
   subs: [],
-  shipping: "Yes",
+  shipping: "Si",
   quantity: "50",
   images: [
     // {
