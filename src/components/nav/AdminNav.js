@@ -12,37 +12,37 @@ const AdminNav = () => (
 
       <li className="nav-item">
         <Link to="/admin/product" className="nav-link">
-          Product
+          Producto
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/admin/products" className="nav-link">
-          Products
+          Productos
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/admin/category" className="nav-link">
-          Category
+          Categoría
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/admin/sub" className="nav-link">
-          Sub Category
+          Sub Categoría
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/admin/coupon" className="nav-link">
-          Coupon
+          Cupon
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/user/password" className="nav-link">
-          Password
+          Contraseña
         </Link>
       </li>
     </ul>

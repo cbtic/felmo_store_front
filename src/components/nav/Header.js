@@ -46,13 +46,13 @@ const Header = () => {
       </Item>
 
       <Item key="shop" icon={<ShoppingOutlined />}>
-        <Link to="/shop">Shop</Link>
+        <Link to="/shop">Tienda</Link>
       </Item>
 
       <Item key="cart" icon={<ShoppingCartOutlined />}>
         <Link to="/cart">
           <Badge count={cart.length} offset={[9, 0]}>
-            Cart
+            Carrito
           </Badge>
         </Link>
       </Item>

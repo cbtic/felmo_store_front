@@ -9,16 +9,16 @@ const Home = () => {
   return (
     <>
       <div className="jumbotron text-danger h1 font-weight-bold text-center">
-        <Jumbotron text={["Latest Products", "New Arrivals", "Best Sellers"]} />
+        <Jumbotron text={["Ultimos productos", "Nuevos ingresos", "Mas vendidos"]} />
       </div>
 
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
-        New Arrivals
+        Nuevos ingresos
       </h4>
       <NewArrivals />
 
       <h4 className="text-center p-3 mt-5 mb-5 display-4 jumbotron">
-        Best Sellers
+        Más vendidos
       </h4>
       <BestSellers />
 

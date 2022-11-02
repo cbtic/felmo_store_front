@@ -23,7 +23,7 @@ const Invoice = ({ order }) => (
           <TableCell>Title</TableCell>
           <TableCell>Price</TableCell>
           <TableCell>Quantity</TableCell>
-          <TableCell>Brand</TableCell>
+          <TableCell>Marca</TableCell>
           <TableCell>Color</TableCell>
         </TableHeader>
       </Table>

@@ -58,7 +58,7 @@ const Checkout = ({ history }) => {
     saveUserAddress(user.token, address).then((res) => {
       if (res.data.ok) {
         setAddressSaved(true);
-        toast.success("Address saved");
+        toast.success("Dirección grabada");
       }
     });
   };
@@ -91,7 +91,7 @@ const Checkout = ({ history }) => {
     <>
       <ReactQuill theme="snow" value={address} onChange={setAddress} />
       <button className="btn btn-primary mt-2" onClick={saveAddressToDb}>
-        Save
+        Guardar
       </button>
     </>
   );
@@ -100,7 +100,7 @@ const Checkout = ({ history }) => {
     products.map((p, i) => (
       <div key={i}>
         <p>
-          {p.product.title} ({p.color}) x {p.count} ={" "}
+          {p.product.title} x {p.count} ={" "}
           {p.product.price * p.count}
         </p>
       </div>
@@ -118,7 +118,7 @@ const Checkout = ({ history }) => {
         className="form-control"
       />
       <button onClick={applyDiscountCoupon} className="btn btn-primary mt-2">
-        Apply
+        Aplicar
       </button>
     </>
   );
@@ -158,12 +158,12 @@ const Checkout = ({ history }) => {
   return (
     <div className="row">
       <div className="col-md-6">
-        <h4>Delivery Address</h4>
+        <h4>Dirección de envío</h4>
         <br />
         <br />
         {showAddress()}
         <hr />
-        <h4>Got Coupon?</h4>
+        <h4>Tiene una oferta que reclamar?</h4>
         <br />
         {showApplyCoupon()}
         <br />
@@ -171,13 +171,13 @@ const Checkout = ({ history }) => {
       </div>
 
       <div className="col-md-6">
-        <h4>Order Summary</h4>
+        <h4>Resumen de la orden</h4>
         <hr />
-        <p>Products {products.length}</p>
+        <p>Productos {products.length}</p>
         <hr />
         {showProductSummary()}
         <hr />
-        <p>Cart Total: {total}</p>
+        <p>Total: {total}</p>
 
         {totalAfterDiscount > 0 && (
           <p className="bg-success p-2">
@@ -212,7 +212,7 @@ const Checkout = ({ history }) => {
               onClick={emptyCart}
               className="btn btn-primary"
             >
-              Empty Cart
+              Limpiar Carrito
             </button>
           </div>
         </div>

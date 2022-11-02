@@ -26,12 +26,12 @@ const History = () => {
     <table className="table table-bordered">
       <thead className="thead-light">
         <tr>
-          <th scope="col">Title</th>
-          <th scope="col">Price</th>
-          <th scope="col">Brand</th>
+          <th scope="col">Titul0</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Marca</th>
           <th scope="col">Color</th>
-          <th scope="col">Count</th>
-          <th scope="col">Shipping</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Delivery</th>
         </tr>
       </thead>
 

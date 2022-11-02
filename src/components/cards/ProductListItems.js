@@ -16,7 +16,7 @@ const ProductListItems = ({ product }) => {
   return (
     <ul className="list-group">
       <li className="list-group-item">
-        Price{" "}
+        Precio{" "}
         <span className="label label-default label-pill pull-xs-right">
           S/. {price}
         </span>
@@ -24,7 +24,7 @@ const ProductListItems = ({ product }) => {
 
       {category && (
         <li className="list-group-item">
-          Category{" "}
+          Categoría{" "}
           <Link
             to={`/category/${category.slug}`}
             className="label label-default label-pill pull-xs-right"
@@ -36,7 +36,7 @@ const ProductListItems = ({ product }) => {
 
       {subs && (
         <li className="list-group-item">
-          Sub Categories
+          Sub Categorías
           {subs.map((s) => (
             <Link
               key={s._id}
@@ -50,7 +50,7 @@ const ProductListItems = ({ product }) => {
       )}
 
       <li className="list-group-item">
-        Shipping{" "}
+        Envío{" "}
         <span className="label label-default label-pill pull-xs-right">
           {shipping}
         </span>
@@ -64,21 +64,21 @@ const ProductListItems = ({ product }) => {
       </li>
 
       <li className="list-group-item">
-        Brand{" "}
+        Marca{" "}
         <span className="label label-default label-pill pull-xs-right">
           {brand}
         </span>
       </li>
 
       <li className="list-group-item">
-        Available{" "}
+        Disponibilidad{" "}
         <span className="label label-default label-pill pull-xs-right">
           {quantity}
         </span>
       </li>
 
       <li className="list-group-item">
-        Sold{" "}
+        Venta{" "}
         <span className="label label-default label-pill pull-xs-right">
           {sold}
         </span>

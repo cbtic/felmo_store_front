@@ -101,7 +101,7 @@ const ProductCreateForm = ({
       </div>
 
       <div className="form-group">
-        <label>Brand</label>
+        <label>Marca</label>
         <select name="brand" className="form-control" onChange={handleChange}>
           <option>Please select</option>
           {brands.map((b) => (

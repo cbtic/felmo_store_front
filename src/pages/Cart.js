@@ -42,14 +42,14 @@ const Cart = ({ history }) => {
     <table className="table table-bordered">
       <thead className="thead-light">
         <tr>
-          <th scope="col">Image</th>
-          <th scope="col">Title</th>
-          <th scope="col">Price</th>
-          <th scope="col">Brand</th>
+          <th scope="col">Imagen</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Marca</th>
           <th scope="col">Color</th>
-          <th scope="col">Count</th>
-          <th scope="col">Shipping</th>
-          <th scope="col">Remove</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Envío</th>
+          <th scope="col">Eliminar</th>
         </tr>
       </thead>
 
@@ -63,7 +63,7 @@ const Cart = ({ history }) => {
     <div className="container-fluid pt-2">
       <div className="row">
         <div className="col-md-8">
-          <h4>Cart / {cart.length} Product</h4>
+          <h4>Carrito / {cart.length} Producto(s)</h4>
 
           {!cart.length ? (
             <p>
@@ -74,9 +74,9 @@ const Cart = ({ history }) => {
           )}
         </div>
         <div className="col-md-4">
-          <h4>Order Summary</h4>
+          <h4>Resumen de la Orden</h4>
           <hr />
-          <p>Products</p>
+          <p>Productos</p>
           {cart.map((c, i) => (
             <div key={i}>
               <p>
@@ -85,7 +85,7 @@ const Cart = ({ history }) => {
             </div>
           ))}
           <hr />
-          Total: <b>${getTotal()}</b>
+          Total: <b>S/. {getTotal()}</b>
           <hr />
           {user ? (
             <>
@@ -94,7 +94,7 @@ const Cart = ({ history }) => {
                 className="btn btn-sm btn-primary mt-2"
                 disabled={!cart.length}
               >
-                Proceed to Checkout
+                Pagar la Orden
               </button>
               <br />
               <button
@@ -102,7 +102,7 @@ const Cart = ({ history }) => {
                 className="btn btn-sm btn-warning mt-2"
                 disabled={!cart.length}
               >
-                Pay Cash on Delivery
+                Pago contra entrega
               </button>
             </>
           ) : (
